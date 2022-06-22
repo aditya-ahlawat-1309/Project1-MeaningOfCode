@@ -224,7 +224,7 @@ useEffect(() => {
                     width: "50%",
                     height: "155%",
 
-                    clipPath: "polygon(20% 0, 1000% 50%, 50% 100%, 0 80%)",
+                    clipPath: "polygon(20% 0, 1000% 10%, 0% 1000%,-10% 100%)",
                   }}
                 />
 
