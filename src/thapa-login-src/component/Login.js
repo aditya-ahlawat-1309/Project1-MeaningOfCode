@@ -13,15 +13,15 @@ const Login = ()  => {
 const loginUser = async (e) => {
     e.preventDefault();
 console.log("1");
-    const res = await fetch("/signin" ,{
-      method : "POST",
-      headers : {
-        'Content-Type': 'application/json'
+    const res = await fetch("https://moc0183.herokuapp.com/signin", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
       },
-      body:JSON.stringify({
+      body: JSON.stringify({
         email,
-        password
-      })
+        password,
+      }),
     });
 
     const data = await res.json();

@@ -41,17 +41,20 @@ const Register = () => {
         //  Object Destructering instead of writing user.name
          const {name , email , phone , work , password , cpassword} = user;
 
-        const res = await fetch("/register" , {
-        
-        method : "POST",
-        headers:{
-          "Content-Type" : "application/json"
-        },
+        const res = await fetch("https://moc0183.herokuapp.com/register", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
 
-        body:JSON.stringify({
-          name , email , phone , work , password , cpassword
-        })
-
+          body: JSON.stringify({
+            name,
+            email,
+            phone,
+            work,
+            password,
+            cpassword,
+          }),
         });
 
         const data = await res.json();
